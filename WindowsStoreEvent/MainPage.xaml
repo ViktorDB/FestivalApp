@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="WindowsStoreEvent.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsStoreEvent"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="{x:Null}">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,0,0,-929" Height="1697" Background="White" Width="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+			<RowDefinition Height="70"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        
+        <Rectangle Grid.ColumnSpan="5" Fill="#FF3295E8" HorizontalAlignment="Left" Height="100" Margin="0,0,-1,0" Stroke="Black" VerticalAlignment="Top" Width="5000"/>
+        
+        
+    	<TextBlock Text="Line Up" Grid.Column="0" Grid.Row="0" FontSize="35" FontWeight="Bold" Foreground="White" FontFamily="viperine" Margin="19,31,254,1520" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+        
+        
+    	<TextBlock Text="Date" Grid.Column="0" Grid.Row="1" FontSize="35" FontWeight="Bold" Foreground="Black" FontFamily="Aharoni" Margin="19,20,254,-2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+    	<TextBlock Text="From" Grid.Column="1" Grid.Row="1" FontSize="35" FontWeight="Bold" Foreground="Black" FontFamily="Aharoni" Margin="19,20,254,-2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+    	<TextBlock Text="Until" Grid.Column="2" Grid.Row="1" FontSize="35" FontWeight="Bold" Foreground="Black" FontFamily="Aharoni" Margin="19,20,254,-2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+    	<TextBlock Text="Stage" Grid.Column="3" Grid.Row="1" FontSize="35" FontWeight="Bold" Foreground="Black" FontFamily="Aharoni" Margin="19,20,254,-2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+    	<TextBlock Text="Band" Grid.Column="4" Grid.Row="1" FontSize="35" FontWeight="Bold" Foreground="Black" FontFamily="Aharoni" Margin="19,20,254,-2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+
+    	<ListBox x:Name="DatumList" DisplayMemberPath="Date" Grid.Column="0" Grid.Row="3" Foreground="Black" Grid.ColumnSpan="1"/>
+    	<ListBox x:Name="VanList" DisplayMemberPath="From" Grid.Column="1" Grid.Row="3" Foreground="Black"  Grid.ColumnSpan="1"/>
+    	<ListBox x:Name="TotList" DisplayMemberPath="Until" Grid.Column="2" Grid.Row="3" Foreground="Black"  Grid.ColumnSpan="1"/>
+    	<ListBox x:Name="StageList" DisplayMemberPath="CStage.Name" Grid.Column="3" Grid.Row="3" Foreground="Black"  Grid.ColumnSpan="1"/>
+    	<ListBox x:Name="BandList" DisplayMemberPath="CBand.Name" Grid.Column="4" Grid.Row="3" Foreground="Black"  Grid.ColumnSpan="1"/>
+        
+    </Grid>
+</Page>
